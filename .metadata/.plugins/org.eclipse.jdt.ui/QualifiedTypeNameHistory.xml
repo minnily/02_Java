@@ -3,10 +3,19 @@
     <fullyQualifiedTypeName name="com.kh.variable.practice2.Practice1"/>
     <fullyQualifiedTypeName name="com.kh.variable.practice2.Practice2"/>
     <fullyQualifiedTypeName name="com.kh.variable.practice2.Practice3"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
-    <fullyQualifiedTypeName name="java.nio.file.spi.FileSystemProvider"/>
     <fullyQualifiedTypeName name="edu.kh.op.practice.run.PracticeRun"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="edu.kh.op.practice.OperatorPractice"/>
     <fullyQualifiedTypeName name="edu.kh.op.practice.OperatorPractice2"/>
+    <fullyQualifiedTypeName name="edu.kh.op.ex.OperatorPracticeRun2_1"/>
+    <fullyQualifiedTypeName name="edu.kh.op.practice.OperatorPractice2_1"/>
+    <fullyQualifiedTypeName name="edu.kh.control.condition.ConditionExample"/>
+    <fullyQualifiedTypeName name="edu.kh.control.practice.ConditionPractice"/>
+    <fullyQualifiedTypeName name="java.nio.file.spi.FileSystemProvider"/>
+    <fullyQualifiedTypeName name="java.security.PublicKey"/>
+    <fullyQualifiedTypeName name="edu.kh.control.loop.ForExample"/>
+    <fullyQualifiedTypeName name="edu.kh.control.loop.WhileExample"/>
+    <fullyQualifiedTypeName name="edu.kh.control.branch.BranchExample"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="edu.kh.control.branch.BranchExample_pr1"/>
 </qualifiedTypeNameHistroy>
