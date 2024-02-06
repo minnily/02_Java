@@ -161,6 +161,40 @@ public class ArrayExample {
 		// 평균 : 72.5
 		//최고점 : 100
 		//최저점 :50
+		
+		System.out.print("입력 받을 인원수 :");
+		int input =sc.nextInt();
+		
+		int[] arr= new int[input];
+		
+		for(int i=0; i<arr.length;i++) {
+			System.out.print(i+1 + "번 점수 입력:");
+			arr[i]=sc.nextInt();
+			
+		}
+		
+		int sum = 0;
+		for(int i=0; i<arr.length;i++) {
+			sum+= arr[i];
+		}
+		int min=arr[0];
+		int max=arr[0];
+		
+		for(int i=0;i<arr.length;i++) {
+			if(arr[i]>max) {
+				max = arr[i]
+			} if (arr[i]<min) {
+				min=arr[i]
+			}
+			
+			System.out.print("합계 :\n" + sum);
+			System.out.printf("평균 : %.1f\n",(double)(sum/arr.length));
+			System.out.print("최대값 :" + max);
+			System.out.print("최소값 :" + min);
+		}
+		
+	
+		
 		System.out.print("입력받을 인원 수 :");
 		
 		int pe =sc.nextInt();
@@ -336,6 +370,33 @@ public class ArrayExample {
 		 * 
 		 * 4) count (숫자세기)
 		 * */
+		
+		System.out.print("문자열 입력 : ");
+		String text =sc.nextLine();
+		
+		char[] arr= new char[text.length()];
+		char sum="";
+		for(int i=0; i<arr.length; i++) {
+			//sum+= arr[i]
+			
+			arr[i]= text.charAT(i);
+		}
+		System.out.printf("[%s]",arr[i]); 
+		System.out.print("검색할 문자 입력 :");
+		char input =sc.next(); 
+		
+		int count=0;
+		for(int i=0; i<arr.length;i++) {
+			
+			if(text[i].equals(input)){
+				
+				count ++;
+			}
+		}
+	
+		
+		
+		
 		
 		System.out.print("문자열 입력 :");
 		String input = sc.nextLine(); 
