@@ -13,7 +13,13 @@ public class ConditionRun {
 		//pr.ex5();
 		//pr.ex6();
 		//pr.ex7();
-		pr.ex8();
+		//pr.ex8();
 		
+		
+		ConditionExample_pr1 pr1 =new ConditionExample_pr1();
+		//pr1.ex1();
+		//pr1.ex2();
+		//pr1.ex3();
+		//pr1.ex4();
 	}
 }

@@ -120,7 +120,7 @@ public class ConditionExample { //기능제공용 클래스
 			System.out.print("온도 입력 : ");
 			int temperature = sc.nextInt();
 			
-			if(temperature <= -5) {
+			if(temperature <= -15) {
 				season += "한파 경보";
 				//시즌에 겨울이 들어가있었는데 +=하면 season에 "한파경보"를 넣겠다는 의미
 				//== "겨울 한파 경보" 가된다(복합대입)

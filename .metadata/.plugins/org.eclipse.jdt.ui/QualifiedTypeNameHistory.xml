@@ -15,7 +15,16 @@
     <fullyQualifiedTypeName name="edu.kh.control.loop.ForExample"/>
     <fullyQualifiedTypeName name="edu.kh.control.loop.WhileExample"/>
     <fullyQualifiedTypeName name="edu.kh.control.branch.BranchExample"/>
+    <fullyQualifiedTypeName name="edu.kh.control.branch.BranchExample_pr1"/>
+    <fullyQualifiedTypeName name="edu.kh.control.condition.ConditionExample_pr1"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
-    <fullyQualifiedTypeName name="edu.kh.control.branch.BranchExample_pr1"/>
+    <fullyQualifiedTypeName name="java.lang.Double"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="java.lang.Math"/>
+    <fullyQualifiedTypeName name="edu.kh.array.ex.ArrayExample"/>
+    <fullyQualifiedTypeName name="edu.kh.array.ex.ArrayExample2"/>
+    <fullyQualifiedTypeName name="edu.kh.array2.ex.Array2Example"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="edu.kh.array.ex.ArrayExample_pr1"/>
 </qualifiedTypeNameHistroy>
