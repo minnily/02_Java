@@ -182,9 +182,9 @@ public class ArrayExample {
 		
 		for(int i=0;i<arr.length;i++) {
 			if(arr[i]>max) {
-				max = arr[i]
+				max = arr[i];
 			} if (arr[i]<min) {
-				min=arr[i]
+				min=arr[i];
 			}
 			
 			System.out.print("합계 :\n" + sum);
@@ -201,31 +201,31 @@ public class ArrayExample {
 		
 		// 배열 선언 및 할당
 		// 할당할 배열의 크기는 입력받은 크기 만큼(pe)
-		int[] input = new int[pe];
+		int[] input1 = new int[pe];
 		
-		int sum =0;				
+		int sum1 =0;				
 			
 			
-		for(int i = 0; i < input.length; i++) {
+		for(int i = 0; i < input1.length; i++) {
 			System.out.print( i+1 + "번 점수 입력 : ");
-			input[i] =sc.nextInt();
+			input1[i] =sc.nextInt();
 			// input[0] = 100; ...
 			
-			sum += input[i];
+			sum1 += input1[i];
 
 			
 		}
 		
-		int max = input[0];
-		int min = input[0];
+		int max1 = input1[0];
+		int min1 = input1[0];
 		
 		// 최고점/최저점 비교
-		for(int i=0; i < input.length;i++) {
-			if(input[i] > max) {
-				max = input[i];
+		for(int i=0; i < input1.length;i++) {
+			if(input1[i] > max1) {
+				max1 = input1[i];
 			}
-			if(input[i] < min) {
-				min = input[i];
+			if(input1[i] < min1) {
+				min1 = input1[i];
 			}
 		}
 		
@@ -233,10 +233,10 @@ public class ArrayExample {
 		
 		
 		
-		System.out.println("합계 : " + sum);
-		System.out.printf("평균 : %.1f\n", (double)sum/input.length);
-		System.out.println("최고점 : " + max);
-		System.out.println("최저점 : " + min);
+		System.out.println("합계 : " + sum1);
+		System.out.printf("평균 : %.1f\n", (double)sum1/input1.length);
+		System.out.println("최고점 : " + max1);
+		System.out.println("최저점 : " + min1);
 		
 	}
 
@@ -371,28 +371,28 @@ public class ArrayExample {
 		 * 4) count (숫자세기)
 		 * */
 		
-		System.out.print("문자열 입력 : ");
-		String text =sc.nextLine();
-		
-		char[] arr= new char[text.length()];
-		char sum="";
-		for(int i=0; i<arr.length; i++) {
-			//sum+= arr[i]
-			
-			arr[i]= text.charAT(i);
-		}
-		System.out.printf("[%s]",arr[i]); 
-		System.out.print("검색할 문자 입력 :");
-		char input =sc.next(); 
-		
-		int count=0;
-		for(int i=0; i<arr.length;i++) {
-			
-			if(text[i].equals(input)){
-				
-				count ++;
-			}
-		}
+//		System.out.print("문자열 입력 : ");
+//		String text =sc.nextLine();
+//		
+//		char[] arr1= new char[text.length()];
+//		char sum2=
+//		for(int i=0; i<arr1.length; i++) {
+//			//sum2+= arr1[i]
+//			
+//			arr1[i]= text.charAt(i);
+//		}
+//		System.out.printf("[%s]",arr1[i]); 
+//		System.out.print("검색할 문자 입력 :");
+//		char input1 =sc.next(); 
+//		
+//		int count1=0;
+//		for(int i=0; i<arr.length;i++) {
+//			
+//			if(tex1[i].equals(input1)){
+//				
+//				count ++;
+//			}
+//		}
 	
 		
 		

@@ -1,5 +1,6 @@
 package edu.kh.array2.ex;
 
+import java.security.PublicKey;
 import java.util.Arrays;
 
 public class Array2Example {
@@ -95,18 +96,18 @@ public class Array2Example {
 		
 		
 		
-		//열별로 합 출력
-		arr[0][0]+arr[0][1]+arr[0][2]
-		arr[1][0]+arr[1][1]+arr[1][2]
-	    arr[2][0]+arr[2][1]+arr[2][2]
+//		//열별로 합 출력
+//		arr[0][0]+arr[0][1]+arr[0][2]
+//		arr[1][0]+arr[1][1]+arr[1][2]
+//	    arr[2][0]+arr[2][1]+arr[2][2]
 		
-		for(int row=0; row=arr[row];row++) {
+		for(int col =0; col < arr.length;col++){
 			int sum2=0;
-			for(int col =0; col < arr[row].length;col++) {
-				sum2+=arr[row][col;]
-			}
+			for(int row=0; row< arr[col].length;row++) {
+				sum2+=arr[row][col];
 		}
-		System.out.printf("%d행의 합 : %d\n",cols, sum2);
+		System.out.printf("%d열의 합 : %d\n", col, sum2 );	
+		}
 		
 	}
 	

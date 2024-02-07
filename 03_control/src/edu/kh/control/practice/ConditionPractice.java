@@ -43,7 +43,7 @@ public class ConditionPractice {
 		
 		if((input1 >=40 && input2 >=40 &&  input3 >=40) && ava>=60){
 		 
-			System.out.printf("국어 : %d\n 수학 : %d\n 영어 : %d\n 합계 : %d\n  평균 : %.1f\n 축하합니다, 합격입니다!",
+			System.out.printf(" 국어 : %d\n 수학 : %d\n 영어 : %d\n 합계 : %d  평균 : %.1f\n 축하합니다, 합격입니다!\n",
 								input1, input2, input3, sum, ava);
 		  
 		}else{
