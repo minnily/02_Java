@@ -108,41 +108,52 @@ public class PracticeService {
 	}
 	
 	public void practice5() {
-		System.out.print("문자열 :");
-		String text= sc.nextLine();
-		//입력할 문자열의 스케너 생성 후 넣을값 변수 지정
+		System.out.print("문자열 :"); //1.문자열 입력받기
+		String text= sc.nextLine(); //2.입력할 문자열에 변수 지정
+		String[] arr = new String[text.length()];
+		//3.입력한 문자열만큼 배열 생성
 		
-		//문자열의 길이만큼 배열이 증가함을 for문으로 명시
-		for(int i=0; i<text.length();i++) {
-			String[] arr = new String[text.length()];	
-		} 
+		System.out.print("문자 :"); //4.찾을 문자를 입력받는 곳 만들기
+		String search= sc.nextLine(); //5. 찾을 문자를 입력하는 곳 변수지정
 		
-		System.out.print("문자 :");
-		String input= sc.nextLine();
 		
+		boolean flag=false; //5. flag를 거짓이라고 지정
+		
+		//6.for문을 사용하여 문자열 안에 문자가 있는 지 확인
+	
+			for(int i=0; i<text.length();i++) {
+					if(!search.equals(text)){
+					//7. 찾을 문자와 text에 입력한 값이 같다면 콘솔에 내용 띄우기 
 			
-		for(int i=0; i<text.length();i++) { 
-		
-		
-		String search ="";//검색이라는 변수 지정
-			
-		boolean flag=false;
-		
-		
-		
-			if(!search.equals(input)){
-			System.out.printf("application에 %s가 존재하는 위치(인덱스) : %d", input, i);
-				flag=true;
-			}
-			if(!search.equals(input)){
+						System.out.printf("%s에 %s가 존재하는 위치(인덱스) : %d",text, search, );
+						System.out.printf("%s의 개수 : %d", search,);
 				
-				System.out.println("존재하는 값이 없습니다.");
-				break;
+						flag=true; //8.그리고 값을 변경해준 후 작업을 멈춤
+					}if(!flag) { //9.그외의 경우에는 존재하지 않는다는 경우로 지정
+						System.out.println("존재하지 않습니다");
+					}
 			}
+	}	
+	
+	public void practice6() {
+		System.out.print("정수 :");
+		int num = sc.nextInt();
+		int[] arr = new int[num];
+		
+		
+		for(int i=0; i< arr.length; i++) {
+			
+			
+			System.out.printf("\n배열 %d번째 인덱스에 넣을 값 : " , i);
+			int input= sc.nextInt();
+			arr[i]= input;
 		}
 		
+		
+		System.out.print(arr[i]);
 	}
 	
+	public
 	
 	
 	public String getInfo(String n1, String n2) {

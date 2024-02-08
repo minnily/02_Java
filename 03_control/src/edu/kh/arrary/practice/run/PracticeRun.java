@@ -13,8 +13,8 @@ public class PracticeRun {
 		//pr.practice2();
 		//pr.practice3();
 		//pr.practice4();
-		pr.practice5();
-		//
+		//pr.practice5();
+		//pr.practice6();
 		
 		
 		

@@ -17,7 +17,6 @@
     <fullyQualifiedTypeName name="edu.kh.control.branch.BranchExample_pr1"/>
     <fullyQualifiedTypeName name="edu.kh.control.condition.ConditionExample_pr1"/>
     <fullyQualifiedTypeName name="java.lang.Double"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="java.lang.Math"/>
     <fullyQualifiedTypeName name="edu.kh.array.ex.ArrayExample"/>
     <fullyQualifiedTypeName name="edu.kh.array.ex.ArrayExample2"/>
@@ -32,4 +31,11 @@
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="edu.kh.oop.abstraction.model.vo.Hero"/>
+    <fullyQualifiedTypeName name="edu.kh.oop.abstraction.model.service.HeroService"/>
+    <fullyQualifiedTypeName name="edu.kh.oop.cls.model.vo.Student"/>
+    <fullyQualifiedTypeName name="edu.kh.oop.cls.model.vo.TestVO"/>
+    <fullyQualifiedTypeName name="edu.kh.oop.cls.model.service.ClsService"/>
+    <fullyQualifiedTypeName name="edu.kh.oop.cls.model.vo.User"/>
 </qualifiedTypeNameHistroy>

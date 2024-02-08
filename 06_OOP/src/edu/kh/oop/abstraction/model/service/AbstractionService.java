@@ -1,6 +1,6 @@
 package edu.kh.oop.abstraction.model.service;
 
-import edu.kh.oop.abstraction.model.vo.People; //ctrl+ shift+ o 해당 클래스에서 임포트 안된거 전부 임포트하기
+import edu.kh.oop.abstraction.model.vo.People;
 
 //Service : 특정 기능(비즈니스 로직)을 제공하는 클래스
 public class AbstractionService {
