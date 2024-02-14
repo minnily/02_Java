@@ -48,8 +48,14 @@ public class BookService {
 		System.out.print(bo1.getAuthor().toString());
 		System.out.println("\n==================================");
 		
+		double dis = bo1.getPrice()-(bo1.getPrice()*bo1.getDoscountRate());
+		double dis2 = bo.getPrice()-(bo.getPrice()*bo.getDoscountRate());
 		
-		
+		System.out.println("도서명 =" + bo1.getTitle().toString());
+		System.out.printf("할인된 가격 =%.0f원\n", dis );
+		System.out.println("도서명 =" + bo.getTitle().toString());
+		System.out.printf("할인된 가격 =%.0f원\n",dis2);
+
 	}
 	
 		

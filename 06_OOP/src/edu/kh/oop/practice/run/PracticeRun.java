@@ -7,7 +7,7 @@ public class PracticeRun {
 		BookService bs = new BookService();
 		bs.practice();
 	
-	/////////
+	
 	}
 }
 	

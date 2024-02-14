@@ -2,7 +2,7 @@ package edu.kh.oop.abstraction.model.service;
 
 import edu.kh.oop.abstraction.model.vo.Hero;
 
-public class HeroService {
+public class HeroService2 {
 
 	public void ex1() {
 	
