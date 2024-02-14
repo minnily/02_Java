@@ -27,7 +27,6 @@
     <fullyQualifiedTypeName name="edu.kh.oop.abstraction.run.AbstractionRun"/>
     <fullyQualifiedTypeName name="edu.kh.oop.abstraction.model.service.AbstractionService"/>
     <fullyQualifiedTypeName name="edu.kh.oop.basic.Account"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="edu.kh.oop.abstraction.model.vo.Hero"/>
     <fullyQualifiedTypeName name="edu.kh.oop.abstraction.model.service.HeroService"/>
     <fullyQualifiedTypeName name="edu.kh.oop.cls.model.vo.Student"/>
@@ -35,13 +34,22 @@
     <fullyQualifiedTypeName name="edu.kh.oop.cls.model.service.ClsService"/>
     <fullyQualifiedTypeName name="edu.kh.oop.cls.model.vo.User"/>
     <fullyQualifiedTypeName name="edu.kh.array2.pratice.Array2Practice"/>
-    <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="java.lang.Math"/>
     <fullyQualifiedTypeName name="edu.kh.oop.method.model.service.MemberService"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="edu.kh.oop.method.model.vo.Member"/>
     <fullyQualifiedTypeName name="edu.kh.oop.practice.model.service.BookService"/>
     <fullyQualifiedTypeName name="java.awt.print.Book"/>
     <fullyQualifiedTypeName name="edu.kh.oop.practice.model.vo.Book"/>
+    <fullyQualifiedTypeName name="edu.kh.oarr.model.vo.Member"/>
+    <fullyQualifiedTypeName name="edu.kh.oarr.model.service.MemberService"/>
+    <fullyQualifiedTypeName name="edu.kh.oop.abstraction.model.service.HeroService2"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="com.hw1.model.vo.Employee"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="com.hw3.model.vo.Product"/>
+    <fullyQualifiedTypeName name="com.hw3.controller.ProductController"/>
+    <fullyQualifiedTypeName name="com.hw3.controller.ProductController2"/>
+    <fullyQualifiedTypeName name="com.hw3.model.vo.Product2"/>
 </qualifiedTypeNameHistroy>
