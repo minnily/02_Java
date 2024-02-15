@@ -174,7 +174,7 @@ public class ArrayExample_pr1 {
 			
 			
 			System.out.print(i+1 +"번 점수 입력 : ");
-			int input2=sc.nextInt();
+			int input2=sc.nextInt();  //
 			
 			score[i] = input2;
 			

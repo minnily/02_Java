@@ -20,20 +20,22 @@ public class Run {
 		stdArr[0]=new Student("홍길동",20, 178.2, 70.0, 1, "정보시스템공학과"); 
 		stdArr[1]=new Student("김말똥",21, 187.3, 80.0, 2, "경영학과"); 
 		stdArr[2]=new Student("강계순",23, 167.0, 45.0, 4, "정보통신공학과"); 
+		
+	
 		//위의 학생 정보 모두 출력
 		
-		//향상된 for문
+//		향상된 fo문
 		for(Student std :stdArr) {
 			//자료형 변수 : 배열명 
 			System.out.println(std.information());
 		}
 		
 		System.out.println("============================================");
-		
-		
-//				for(int i=0; i<stdArr.length;i++) {
-//					stdArr[i] = ;
-//				System.out.println(stdArr[i].information());	
+				
+//		for(int i=0; i<stdArr.length;i++) {
+//					
+//					System.out.println(stdArr[i].information());
+//				
 //				}
 		//최대 10명의 사원 정보를 기록할 수 있게 배열을 할당
 		Employee[] emps = new Employee[10];

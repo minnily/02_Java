@@ -2,7 +2,6 @@ package com.hw3.controller;
 
 import java.util.Scanner;
 
-import com.hw3.model.vo.ProductPre1;
 import com.hw3.model.vo.Product2;
 
 public class ProductController2 {
