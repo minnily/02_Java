@@ -26,6 +26,7 @@ public class MemberServicePractice1 {
 		//회원 정보 관리 프로그램 
 		//회원가입, 로그인, 회원정보 조회 회원정보 수정, 
 		//회원검색 지역, 로그아웃 (do while문)
+	}
 		
 	public int emptyIndex() {
 		//3번까지 배열을 미리 정해두었는데 만약 비어있는게 있을 경우 다시 i번째로
