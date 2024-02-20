@@ -1,11 +1,11 @@
-package edu.kh.collection.model.service;
+package edu.kh.collection.pack1.model.service;
 
 import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
 
-import edu.kh.collection.model.vo.Student;
+import edu.kh.collection.pack1.model.vo.Student;
 
 public class StudentService_pr1 {
  
@@ -19,11 +19,11 @@ public class StudentService_pr1 {
 	
 	//3. 기본 생성자에 +기본으로 제공할 객체 5개정도 만들기
 	public StudentService_pr1() {
-		studentlist .add(new Student("이민경", 29, "경기도 수원시", 'F', 100));
-		studentlist.add(new Student("양민찬", 28, "서울시", 'M', 90));
-		studentlist.add(new Student("김소영", 42, "제주시 애월읍", 'F', 65));
-		studentlist.add(new Student("김남윤", 29, "경북 대구광역시", 'M', 100));
-		studentlist.add(new Student("이상희", 31, "충북 청주시", 'F', 34));
+		studentlist.add(new Student("박일번", 29, "용인시", 'F', 100));
+		studentlist.add(new Student("송이번", 28, "서울시", 'M', 90));
+		studentlist.add(new Student("이삼번", 31, "제주시", 'F', 65));
+		studentlist.add(new Student("최사번", 30, "대구광역시", 'M', 88));
+		studentlist.add(new Student("김오번", 31, "평택시", 'F', 57));
 		
 	}
 	
@@ -70,7 +70,7 @@ public class StudentService_pr1 {
 				case 3 : System.out.println(updateStudent());break;
 				case 4 : System.out.println(RemoveStudent());break;
 				case 5 : searchName1();break;
-				case 6 : break;
+				case 6 : searchName2();break;
 				case 0 :System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"); 
 						System.out.println("[프로그램을 종료합니다]");break;
 				default : System.out.println("메뉴에 작성된 번호만 입력해주세요");
@@ -251,14 +251,15 @@ public class StudentService_pr1 {
 			System.out.println("검색할 이름을 입력하세요 : ");
 			String searchname = sc.next();
 			
+			boolean flag = false;
+			
 			for(Student std : studentlist) {
 				if(std.getName().contains(searchname)) {
 					System.out.println(std);
-					
-				}else {
-					System.out.println("검색결과가 없습니다");
-					
+					flag = true;
 				}
+				}if(!flag) {
+					System.out.println("검색결과가 없습니다");
 			}
 		
 		}
@@ -273,6 +274,27 @@ public class StudentService_pr1 {
 			
 			//사용해야하는 메서드 
 			//boolean String.contains(문자열) 사용해야함 : String에 문자열이 포함되어 있으면 ture/ 없으면 false
+			
+			System.out.println("================================================");
+			System.out.println("[이름으로 검색하기 2]");
+			
+			System.out.println("검색할 글자를 입력하세요 : ");
+			String searchname = sc.next();
+			
+			boolean flag = false;
+			
+			for(Student std : studentlist) {
+				if(std.getName().contains(searchname)) {
+					
+					System.out.println(std);
+					flag = true;	
+				}
+					
+				}if(!flag) {
+					System.out.println("검색결과가 없습니다");
+			}
+			
+			
 			
 		}
 }
