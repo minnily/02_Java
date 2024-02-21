@@ -285,4 +285,65 @@ public class SetService {
 			System.out.println(i+1+"회 : " + lottoList.get(i));
 		}
 	}
+
+	public void lottoNumberGenerator1() {
+		//1. 입력할 받을 스케너 등록
+		Scanner sc = new Scanner(System.in);
+		
+		//2. 금액을 입력할 변수 지정 후 프린트 구문으로 띄우기
+		System.out.println("금액 입력 : ");
+		int input1 = sc.nextInt();
+		
+		//3. 랜덤이라는 변수 지정하기
+		Random random = new Random();
+		
+		//4. 리스트에 로또의 값을 저장할 묶음 만들기
+		List<Set<Integer>> lotto = new ArrayList<Set<Integer>>();
+		
+		//5.금액단위로 1회씩 반복되는 로또 형태 만들기
+		for(int i =0 ; i < input1/1000;i++) {
+			
+			//6. 오름차순으로 정렬할 예정이니 treeset사용
+			Set<Integer> lottonum = new TreeSet<Integer>();
+			
+			//7. 6개의 숫자를 뽑을 수 있도록 하기(랜덤으로)
+			while(lottonum.size() >6 ) {
+				lottonum.add(random.nextInt(45)+1);
+			}
+			//7. 만든 리스트에 랜덤 숫자를 넣는다
+			lotto.add(lottonum);
+			
+		}
+		//8. 0회 로또의 번호 가 출력될 수 있게 한다.
+		for(int i = 0; i <lotto.size();i++) {
+			System.out.println(i+1 +"번째 번호 : " + lotto.get(i));
+		}
+	
+	}
+
+	public void lottoNumberGenerator2() {
+		//1.출력할 스케너 받기
+		Scanner sc =new Scanner(System.in);
+		
+		//2.스케너에 입력할 숫자 넣는 부분 만들고 변수지정하기
+		System.out.print("금액 입력 : ");
+		int input = sc.nextInt();
+		
+		//3.로또 번호를 넣을 List 를 만들어서 묶어주기
+		List<Set<Integer>> lottoList = new ArrayList<Set<Integer>>();
+		
+		//4. 로또 번호가 랜덤으로 발생할 것에 대한 객체 생성하기
+		Random lottonum = new Random();
+		
+		//5.for문을 사용하여 넣은 금액만큼 for문이 돌게 하기
+		 for(int i =0; i <input/1000;i++) {
+			 
+			
+		 }
+		
+		
+	}
+
+
+
 }
