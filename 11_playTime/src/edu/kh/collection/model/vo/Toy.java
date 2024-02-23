@@ -122,8 +122,8 @@ public class Toy {
 
 	@Override
 	public String toString() {
-		return "Toy [name=" + name + ", age=" + age + ", price=" + price + ", color=" + color + ", yymmdd=" + yymmdd
-				+ ", made=" + basicUsed() + "]";
+		return "이름 : " + name + "/ 가격 : " + price+ "/ 색상 : " + color +"/ 사용가능연령 : " + age +   "/ 제조년월일 : " + yymmdd
+				+ "/ 재료 : " + basicUsed();
 	}
 	
 	
