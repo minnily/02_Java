@@ -157,7 +157,7 @@ public Set<String> madeNum(Integer... num){
 		System.out.print("제조일(YYYYMMDD)형식으로 입력 : ");
 		String yymmdd = sc.next();
 		
-		for(:madeMap)
+	
 	}
 
 

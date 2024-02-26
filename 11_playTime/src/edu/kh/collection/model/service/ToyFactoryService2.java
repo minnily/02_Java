@@ -35,9 +35,8 @@ public class ToyFactoryService2{
 		toySet.add(new Toy2("허기워기", 5, 12000, "파란색", "19940312", addMaterials(1,2)));
 		toySet.add(new Toy2("키시미시", 8, 15000, "분홍색", "19940505", addMaterials(1,2)));
 		toySet.add(new Toy2("캣냅", 8, 27000, "보라색", "19960128", addMaterials(1,2)));
-		toySet.add(new Toy2("파피", 12, 57000, "빨간색", "19931225", addMaterials(1,2,4)));
-			
-	}
+		toySet.add(new Toy2("파피", 12, 57000, "빨간색", "19931225", addMaterials(1,2,4)));		
+	
 	
 	// materials에 전달 받은 값들을 추가하고 Set으로 반환하는 메서드
 									//매개변수에 몇개가 들어올지 모를때 타입쓰고 ... 매개변수명 작성

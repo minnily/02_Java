@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="NewWizardAction">
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.jdt.ui.wizards.JavaProjectWizard"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+		</list>
 	</section>
 	<section name="SmartImportWizard">
 		<item key="SmartImportRootWizardPage.STORE_HIDE_ALREADY_OPEN" value="false"/>
@@ -8,6 +11,9 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\workspace\02_java\12_ToDoList\src"/>
+			<item value="C:\workspace\02_java\12_ToDoList\.settings"/>
+			<item value="C:\workspace\02_java\12_ToDoList"/>
 			<item value="C:\workspace\02_java\objectArray\src\edu\kh\oarr"/>
 			<item value="C:\workspace\02_java\06_OOP\src\edu\kh\oop\basic"/>
 			<item value="C:\workspace\02_java\06_OOP\src\edu\kh\oop\method\model\run"/>
