@@ -16,7 +16,7 @@ public interface TodoListDAO {
 	
 	
 	/** 할 일 목록 반환 DA
-	 * @return todoList
+	 * @return todoListsss
 	 */
 	List<Todo> todoListFullView();
 
