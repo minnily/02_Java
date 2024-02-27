@@ -11,6 +11,7 @@ import edu.kh.toyProject.model.dto.DinoTeang;
 
 public class ToyProjectServiceImpl implements ToyProjectService{
 
+	private static final LocalDateTime LocalDateTime = null;
 	private ToyProjectDAO dao = null;
 	
 	public ToyProjectServiceImpl() throws Exception{
@@ -24,23 +25,23 @@ public class ToyProjectServiceImpl implements ToyProjectService{
 		return null;
 	}
 	/*상품 조회하기*/
+	
+	
 	@Override
-	public Map<String, Object> checkDino() throws Exception{
+	public Map<String, Object> checkDino() throws Exception {
 		List<DinoTeang> dinoList = dao.checkDino();
-		int sold = 0;
+		int soldCount =0;
 		
-		for(DinoTeang dino : dinoList) {
-			
-			if(dino.isPurchase()) {
-				sold++;
+		for(DinoTeang dinoTeang : dinoList) {
+			if(dinoTeang.isPurchase()) {
+				soldCount++;
 			}
 		}
 		
 		Map<String, Object> map = new HashMap<String, Object>();
 		
-		map.put("DinoTeang Product List", dinoList);
-		map.put("SoldOut List", sold);
-		
+		map.put("dinoList", dinoList);
+		map.put("soldCount", soldCount);
 		return map;
 	}
 	
@@ -48,12 +49,26 @@ public class ToyProjectServiceImpl implements ToyProjectService{
 	@Override
 	public int addingDino(String modelName, int price, String material) throws Exception{
 		
-		DinoTeang dino = new DinoTeang(modelName, price, material,LocalDateTime.now() , false);
+		DinoTeang dino = new DinoTeang(modelName, price, material,LocalDateTime.now(), false);
 		
 		int index =dao.addingDino(dino);
 		
 		return index;
 	}
+
+	@Override
+	public boolean purchaseDino(int index) throws Exception {
+		
+		return dao.purchaseDino(index);
+	}
+
+	@Override
+	public boolean updateDino(int index, String modelName, int price, String material) throws Exception {
+		
+		return dao.updateDino(index, modelName, price, material);
+	}
+
+
 
 	
 	

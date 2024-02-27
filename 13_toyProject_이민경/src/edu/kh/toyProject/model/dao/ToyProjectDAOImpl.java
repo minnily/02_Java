@@ -14,6 +14,8 @@ import edu.kh.toyProject.model.dto.DinoTeang;
 
 public class ToyProjectDAOImpl implements ToyProjectDAO {
 
+		private static final LocalDateTime LocalDateTime = null;
+
 		private final String FILE_PATH= "/java_test/1_ToyProject.dat";
 		
 		private ObjectInputStream ois = null;
@@ -21,7 +23,7 @@ public class ToyProjectDAOImpl implements ToyProjectDAO {
 		
 		private List<DinoTeang> dinoList = null;
 		
-		public ToyProjectDAOImpl() throws IOException, ClassNotFoundException {
+		public ToyProjectDAOImpl() throws Exception {
 			
 			File file = new File(FILE_PATH);
 			
@@ -39,11 +41,11 @@ public class ToyProjectDAOImpl implements ToyProjectDAO {
 			
 			dinoList = new ArrayList<DinoTeang>();
 			
-			dinoList.add(new DinoTeang("쿼카 슬리퍼",26000, "polyester 100%", LocalDateTime.now(), false));
-			dinoList.add(new DinoTeang("스모어 쿼카 쿠션", 39000, "polyester 100%",LocalDateTime.now(), false));
-			dinoList.add(new DinoTeang("스모어 피규어", 33000, "PVC", LocalDateTime.now(), false));
-			dinoList.add(new DinoTeang("쿼카&보노 머그컵", 26000, "Ceramic",LocalDateTime.now() , false));
-			dinoList.add(new DinoTeang("쿼카 스노우볼 메이커", 10000, "PVC",LocalDateTime.now() , false));
+			dinoList.add(new DinoTeang("쿼카 슬리퍼",26000, "polyester", LocalDateTime.now(), false));
+			dinoList.add(new DinoTeang("스모어 쿼카 쿠션", 39000, "polyester",LocalDateTime, false));
+			dinoList.add(new DinoTeang("스모어 피규어", 33000, "PVC", LocalDateTime, false));
+			dinoList.add(new DinoTeang("쿼카&보노 머그컵", 26000, "Ceramic",LocalDateTime , false));
+			dinoList.add(new DinoTeang("쿼카 스노우볼 메이커", 10000, "PVC",LocalDateTime, false));
 			
 			try {
 				oos = new ObjectOutputStream(new FileOutputStream(FILE_PATH));
@@ -55,8 +57,8 @@ public class ToyProjectDAOImpl implements ToyProjectDAO {
 			}
 		}
 
-		private void saveFile() throws Exception{
-			
+		@Override
+		public void saveFile() throws Exception {
 			try {
 				//FILE_PATH 경로에 있는 파일과 연결된 객체 출력 스트림 생성
 				oos = new ObjectOutputStream(new FileOutputStream(FILE_PATH));
@@ -65,15 +67,10 @@ public class ToyProjectDAOImpl implements ToyProjectDAO {
 			}  finally {
 				oos.close();
 				
-				
 			}
 			
 		}
-		
-		
-		
-		
-		
+				
 		@Override
 		public List<DinoTeang> checkDino() throws Exception {
 			
@@ -89,6 +86,36 @@ public class ToyProjectDAOImpl implements ToyProjectDAO {
 			}
 			return -1;
 		}
+
+		@Override
+		public boolean purchaseDino(int index) throws Exception {
+			if(index < 0 || index >= dinoList.size()) return false;
+			
+			boolean purchase = dinoList.get(index).isPurchase();
+			dinoList.get(index).setPurchase(!purchase);
+			
+			saveFile();
+			
+			return true;
+		}
+
+		@Override
+		public boolean updateDino(int index, String modelName, int price, String material) throws Exception {
+			
+			DinoTeang dino = new DinoTeang(modelName, price, material, dinoList.get(index).getDate()
+											, dinoList.get(index).isPurchase());
+			
+			if(dinoList.set(index,dino) != null) {
+				saveFile();
+				return true;
+			}
+			return false;
+		}
+
+
+
+
+		
 
 
 	
