@@ -16,4 +16,6 @@ public interface ToyProjectDAO {
 
 	boolean updateDino(int index, String modelName, int price, String material)throws Exception;
 
+	DinoTeang toDeleteDino(int index)throws Exception;
+
 }

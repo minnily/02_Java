@@ -21,6 +21,10 @@ public interface ToyProjectService {
 
 	public abstract boolean updateDino(int index, String modelName, int price, String material)throws Exception;
 
+	public abstract String toDeleteDino(int index)throws Exception;
+
+
+
 	
 
 

@@ -2,6 +2,7 @@ package edu.kh.toyProject.model.dto;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 public class DinoTeang implements Serializable{
 
@@ -109,7 +110,9 @@ public class DinoTeang implements Serializable{
 	@Override
 	public String toString() {
 		return "[상품명 : " + modelName + "] [가격 : " + price + "] \n [재료 : " + material + "] [상품출시일 : " + date
-				+ "] [판매여부 : "+ purchase + "]";
+				+ "] [판매여부 : "+ purchase + "]\n";
+		
+		
 	}
 	
 	

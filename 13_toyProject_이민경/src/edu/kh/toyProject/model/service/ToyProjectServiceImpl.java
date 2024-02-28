@@ -1,6 +1,7 @@
 package edu.kh.toyProject.model.service;
 
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -22,7 +23,9 @@ public class ToyProjectServiceImpl implements ToyProjectService{
 	@Override
 	public String dateFormat(LocalDateTime date) {
 		
-		return null;
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+		String dateTime = date.format(formatter);
+		return dateTime;
 	}
 	/*상품 조회하기*/
 	
@@ -44,6 +47,7 @@ public class ToyProjectServiceImpl implements ToyProjectService{
 		map.put("soldCount", soldCount);
 		return map;
 	}
+	
 	
 	/*상품 추가하기*/
 	@Override
@@ -68,24 +72,15 @@ public class ToyProjectServiceImpl implements ToyProjectService{
 		return dao.updateDino(index, modelName, price, material);
 	}
 
+	@Override
+	public String toDeleteDino(int index) throws Exception {
+		
+		DinoTeang dino = dao.toDeleteDino(index);
+		if(dino == null) return null;
+		
+		return dino.getMaterial();
+	}
 
-
-	
-	
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	
 	

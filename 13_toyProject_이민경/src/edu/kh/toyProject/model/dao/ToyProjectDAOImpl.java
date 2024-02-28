@@ -41,11 +41,11 @@ public class ToyProjectDAOImpl implements ToyProjectDAO {
 			
 			dinoList = new ArrayList<DinoTeang>();
 			
-			dinoList.add(new DinoTeang("쿼카 슬리퍼",26000, "polyester", LocalDateTime.now(), false));
-			dinoList.add(new DinoTeang("스모어 쿼카 쿠션", 39000, "polyester",LocalDateTime, false));
-			dinoList.add(new DinoTeang("스모어 피규어", 33000, "PVC", LocalDateTime, false));
-			dinoList.add(new DinoTeang("쿼카&보노 머그컵", 26000, "Ceramic",LocalDateTime , false));
-			dinoList.add(new DinoTeang("쿼카 스노우볼 메이커", 10000, "PVC",LocalDateTime, false));
+			dinoList.add(new DinoTeang("쿼카 슬리퍼",26000, "폴리", LocalDateTime.now(), false));
+			dinoList.add(new DinoTeang("스모어 쿼카 쿠션", 39000, "폴리",LocalDateTime.now(), false));
+			dinoList.add(new DinoTeang("스모어 피규어", 33000, "플라스틱", LocalDateTime.now(), false));
+			dinoList.add(new DinoTeang("쿼카&보노 머그컵", 26000, "세라믹",LocalDateTime.now() , false));
+			dinoList.add(new DinoTeang("쿼카 스노우볼 메이커", 10000, "플라스틱",LocalDateTime.now(), false));
 			
 			try {
 				oos = new ObjectOutputStream(new FileOutputStream(FILE_PATH));
@@ -110,6 +110,17 @@ public class ToyProjectDAOImpl implements ToyProjectDAO {
 				return true;
 			}
 			return false;
+		}
+
+		@Override
+		public DinoTeang toDeleteDino(int index) throws Exception {
+			if(index <0 || index >= dinoList.size()) return null;
+			
+			DinoTeang dino = dinoList.remove(index);
+			
+			saveFile();
+			
+			return dino;
 		}
 
 
