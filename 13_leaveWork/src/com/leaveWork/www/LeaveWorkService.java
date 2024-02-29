@@ -11,7 +11,6 @@ public class LeaveWorkService {
 	
 	public LeaveWorkService() {}
 	
-	
 	public void displayMenu() {
 		
 		int num = 0;
@@ -61,6 +60,8 @@ public class LeaveWorkService {
 			
 			System.out.println("퇴사 사유 : ");
 			String why = br.readLine();
+			
+			
 					
 		}
 	}
