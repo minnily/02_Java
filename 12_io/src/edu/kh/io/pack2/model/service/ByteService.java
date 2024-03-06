@@ -137,6 +137,23 @@ public class ByteService {
 			
 		}
 	}
+	
+	
+	public void fileByteOutputPR() {
+		//바이트 기반 출력 
+		
+		FileOutputStream fos =null;
+		
+		try {
+			
+			
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}finally {
+			
+		}
+	}
 
 	/**
 	 * 버퍼를 이용한 파일 출력하기
@@ -276,6 +293,14 @@ public class ByteService {
 		}
 	}
 
+	public void fileByteInputPR2() {
+		
+		
+	}
+	
+	
+	
+	
 	/**
 	 * 바이트 기반 파일 입력하기2
 	 */

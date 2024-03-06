@@ -103,6 +103,34 @@ public class FileService {
 	}
 	
 	
+	public void method1a() {
+		//폴더를 만드는 방법
+		
+		File f = new File("/file_made/pr1");
+		
+		if(!f.exists()) {
+			f.mkdir(); //만약폴더가 존재하지 않으면 파일을 만들어달라!
+		}
+		
+		//파일을 만드는 방법
+		
+		File f2 = new File("/file_made/pr1/Before_test.txt");
+		
+		if(!f2.exists()) {
+			try {
+				f2.createNewFile();
+				System.out.println(f2.getName()+"파일이 생성되었습니다");//파일명을 가져와 생성되었다는 문구 띄우기
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+		
+		
+		
+		
+	}
+	
+	
 	/**
 	 * File 객체를 이용해서
 	 * 지정된 위치에 파일 생성하기
