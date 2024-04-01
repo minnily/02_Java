@@ -74,7 +74,7 @@ public class ToyProjectView {
 
 	public int menu() throws Exception{
 		System.out.println("-------------------------------");
-		System.out.println("                                                 ʕ •ᴥ•ʔ             ");
+		System.out.println("            ʕ •ᴥ•ʔ             ");
 		System.out.println("     [DinoTaeng Menu List]     ");
 		System.out.println("================================");
 		System.out.println("    1.   DinoTaeng 상품 조회      ");
@@ -133,7 +133,7 @@ public class ToyProjectView {
 	/*상품 추가하기*/
 	public void  addingDino() throws Exception {
 		System.out.println("=================================");
-		System.out.println("                                                         ʕ •ᴥ•ʔ             ");
+		System.out.println("              ʕ •ᴥ•ʔ             ");
 		System.out.println("------[2. DinoTaeng 상품 추가]------\n");
 		
 		
@@ -234,6 +234,8 @@ public class ToyProjectView {
 		if(result) { 
 			
 			System.out.println("[ 상품 수정이 완료 되었습니다 ʕง•ᴥ•ʔง ]");
+			
+			
 		}else{ 	
 			
 			System.out.println("[ 상품 수정에 실패 했습니다ʕ º ᴥ ºʔ ]");
